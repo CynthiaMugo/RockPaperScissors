@@ -9,18 +9,25 @@
 </head>
 <body>
     <h1>Hello: <span id="player-name"></span></h1>
-    <h2>Countdown <b>15</b> sec</h2>
+    <h2>Countdown <b id="countdown" style="color: blueviolet;">15</b> sec</h2>
     <div id="confuse-them" style="margin: 30px;">
         <span>
             <i class="fa-solid fa-hand-back-fist" style="font-size: 100px;"></i>
         </span>
     </div>
-    <div id="btns" style="margin: 30px;">
-        <button>Play</button>
-        <button>Stop</button>
+    <div id="play-game" style="margin: 30px;">
+        <button id="play-button">Play</button>
+        <button id="stop-button">Stop</button>
     </div>
-    <div>
+    <div id="play-options" style="margin: 30px; display: none;">
+        <h1>I choose:</h1>
+        <button id="btn-rock">Rock</button>
+        <button id="btn-paper">Paper</button>
+        <button id="btn-scissor">Scissors</button>
+    </div>
+    <div id="new-game" style="margin: 30px;">
         <button>Start a new game</button>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>
